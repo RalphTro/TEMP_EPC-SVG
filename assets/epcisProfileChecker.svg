@@ -160,7 +160,7 @@
       aria-label="Weitere Informationen zu Bereich B öffnen"
       data-tooltip="Tooltip für Rechteck B (aus data-tooltip)"
       onmouseover="(function(evt){const el=evt.currentTarget||evt.target;el.style.fill='#6e98ec';window.SVGTooltip&amp;&amp;window.SVGTooltip.show&amp;&amp;window.SVGTooltip.show(evt)})(evt)"
-      onmouseout="(function(evt){const el=evt.currentTarget||evt.target;el.style.fill='#c8b7c4';window.SVGTooltip&amp;&amp;window.SVGTooltip.hide&amp;&amp;window.SVGTooltip.hide(evt)})(evt)" />
+      onmouseout="(function(evt){const el=evt.currentTarget||evt.target;el.style.fill='#c8b7c4';window.SVGTooltip&amp;&amp;window.SVGTooltip.hide&amp;&amp;window.SVGTooltip.hide(evt)})(evt)"/>
   </a>
 
     
@@ -250,38 +250,20 @@
      id="path1-3"
      style="stroke-width:0.172952" />
      
-     <rect
-     style="fill:#1f1c24;stroke-width:0.264583"
-     id="rect15"
-     width="253.39999"
-     height="56.472008"
-     x="160.72801"
-     y="578.5144"
-     rx="10"
-     ry="10" 
-     data-tooltip-src="https://raw.githubusercontent.com/openepcis/openepcis-event-sentry/main/json-schema-epcis-snippets/event-type-0.1.0.json"
-     data-tooltip-json-key="description"
-     onmouseover="(function(evt){
-       const el = evt.currentTarget;
-       el.style.fill='#6e98ec';
-       if(window.SVGTooltip &amp;&amp; window.SVGTooltip.fetchAndShowJSON){
-         window.SVGTooltip.fetchAndShowJSON(evt, el.getAttribute('data-tooltip-src'), el.getAttribute('data-tooltip-json-key'));
-       } else {
-      window.SVGTooltip &amp;&amp; window.SVGTooltip.show(evt,'Lade Tooltip…');
-      }
-      })(evt)"
+ 
+    <rect
+      style="fill:#1f1c24;stroke-width:0.264583"
+      id="rect15"
+      width="253.39999"
+      height="56.472008"
+      x="160.72801"
+      y="578.5144"
+      rx="10"
+      ry="10"
+      data-tooltip-src="https://raw.githubusercontent.com/openepcis/openepcis-event-sentry/main/json-schema-epcis-snippets/event-type-0.1.0.json"
+      data-tooltip-json-key="description"
+    />
 
-    
-
-
-
-
-     onmouseout="(function(evt){
-    const el = evt.currentTarget || evt.target;
-    el.style.fill='#1f1c24'; 
-    window.SVGTooltip &amp;&amp; window.SVGTooltip.hide &amp;&amp; window.SVGTooltip.hide();
-  })(evt)"
-     />
      
      <rect
      style="fill:#1f1c24;stroke-width:0.264583"
