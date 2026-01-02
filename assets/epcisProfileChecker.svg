@@ -248,7 +248,9 @@
          id="tspan12">EPCIS Profile Checker</tspan></tspan></text><path
      d="m 469.46456,472.15258 c -2.87407,-0.86695 -5.86651,0.88465 -6.69492,3.89246 l -21.64017,79.26464 c -0.82842,3.0078 0.84532,6.13946 3.7194,7.00642 2.87409,0.86696 5.86652,-0.88465 6.69493,-3.89246 l 21.64017,-79.26463 c 0.82841,-3.0078 -0.84532,-6.13947 -3.71941,-7.00643 z m 10.92153,24.08017 c -2.1133,2.21163 -2.1133,5.8033 0,8.01493 l 12.40928,12.98667 -12.40928,12.98665 c -2.1133,2.21163 -2.1133,5.80331 0,8.01494 2.1133,2.21161 5.54529,2.21161 7.65859,0 l 16.23012,-16.98529 c 2.11331,-2.21162 2.11331,-5.80331 0,-8.01492 l -16.23012,-16.98529 c -2.1133,-2.21162 -5.54529,-2.21162 -7.65859,0 z m -46.44183,0 c -2.1133,-2.21163 -5.5453,-2.21163 -7.6586,0 l -16.23012,16.98527 c -2.1133,2.21164 -2.1133,5.80332 0,8.01494 l 16.23012,16.98528 c 2.1133,2.21162 5.5453,2.21162 7.6586,0 2.11329,-2.21162 2.11329,-5.80331 0,-8.01493 l -12.40929,-12.96896 12.39238,-12.98667 c 2.1133,-2.21163 2.1133,-5.8033 0,-8.01493 z"
      id="path1-3"
-     style="stroke-width:0.172952" /><rect
+     style="stroke-width:0.172952" />
+     
+     <rect
      style="fill:#1f1c24;stroke-width:0.264583"
      id="rect15"
      width="253.39999"
@@ -256,7 +258,32 @@
      x="160.72801"
      y="578.5144"
      rx="10"
-     ry="10" /><rect
+     ry="10" 
+     data-tooltip-src="https://raw.githubusercontent.com/openepcis/openepcis-event-sentry/main/json-schema-epcis-snippets/event-type-0.1.0.json"
+     data-tooltip-json-key="description"
+     onmouseover="(function(evt){
+       const el = evt.currentTarget;
+       el.style.fill='#6e98ec';
+       if(window.SVGTooltip &amp;&amp; window.SVGTooltip.fetchAndShowJSON){
+         window.SVGTooltip.fetchAndShowJSON(evt, el.getAttribute('data-tooltip-src'), el.getAttribute('data-tooltip-json-key'));
+       } else {
+      window.SVGTooltip &amp;&amp; window.SVGTooltip.show(evt,'Lade Tooltip…');
+      }
+      })(evt)"
+
+    
+
+
+
+
+     onmouseout="(function(evt){
+    const el = evt.currentTarget || evt.target;
+    el.style.fill='#1f1c24'; 
+    window.SVGTooltip &amp;&amp; window.SVGTooltip.hide &amp;&amp; window.SVGTooltip.hide();
+  })(evt)"
+     />
+     
+     <rect
      style="fill:#1f1c24;stroke-width:0.264583"
      id="rect15-0"
      width="253.40004"
@@ -469,7 +496,40 @@
 
         tip.style.left = Math.max(0, x) + 'px';
         tip.style.top  = Math.max(0, y) + 'px';
-      }
+      }, 
+
+
+cache: new Map(),
+
+async fetchJSON(url) {
+  if (this.cache.has(url)) return this.cache.get(url);
+  const res = await fetch(url, { mode: 'cors', credentials: 'omit' });
+  if (!res.ok) throw new Error('HTTP ' + res.status);
+  const data = await res.json();
+  this.cache.set(url, data);
+  return data;
+},
+
+/**
+ * Lädt JSON und zeigt die gewünschte Property als Tooltip an.
+ * @param {Event} evt - Maus-/Touch-Event
+ * @param {string} url - RAW-JSON-URL
+ * @param {string} key - Property-Name (z.B. "description")
+ */
+async fetchAndShowJSON(evt, url, key='description') {
+  try {
+    // Sofort Feedback
+    this.show(evt, 'Lade…');
+
+    const data = await this.fetchJSON(url);
+    // einfache Key-Auswertung: top-level property
+    const txt = (data && data[key]) ? String(data[key]) : '(Kein Text gefunden)'
+    this.show(evt, txt);
+  } catch (err) {
+    console.error('Tooltip JSON fetch error:', err);
+    this.show(evt, 'Fehler beim Laden');
+  }
+}
     };
 
     // global verfügbar machen
