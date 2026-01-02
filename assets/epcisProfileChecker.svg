@@ -1,24 +1,25 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
-<svg
-  onload="window.SVGTooltip.init()"
-  width="1200mm"
-  height="800mm"
-  viewBox="0 0 1200 800"
-  version="1.1"
-  id="svg1"
-  inkscape:version="1.4.2 (ebf0e940, 2025-05-08)"
-  sodipodi:docname="epcisProfileChecker0dot1.svg"
-  xml:space="preserve"
-  inkscape:export-filename="epcisProfileChecker0dot2.svg"
-  inkscape:export-xdpi="96.81633"
-  inkscape:export-ydpi="96.81633"
-  xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-  xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-  xmlns="http://www.w3.org/2000/svg"
-  xmlns:xlink="http://www.w3.org/1999/xlink"
-  xmlns:svg="http://www.w3.org/2000/svg"><sodipodi:namedview
+<div class="svg-wrap">
+  <svg
+    onload="window.SVGTooltip.init()"
+    width="1200mm"
+    height="800mm"
+    viewBox="0 0 1200 800"
+    version="1.1"
+    id="svg1"
+    inkscape:version="1.4.2 (ebf0e940, 2025-05-08)"
+    sodipodi:docname="epcisProfileChecker0dot1.svg"
+    xml:space="preserve"
+    inkscape:export-filename="epcisProfileChecker0dot2.svg"
+    inkscape:export-xdpi="96.81633"
+    inkscape:export-ydpi="96.81633"
+    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    xmlns:svg="http://www.w3.org/2000/svg"><sodipodi:namedview
    id="namedview1"
    pagecolor="#ffffff"
    bordercolor="#000000"
@@ -489,57 +490,33 @@
        x="618.42188"
        y="2017.6352"
        id="tspan19">... and a lot more</tspan></text></g>
-
-
-  <!-- ===== Tooltip-Logik ===== -->
-
+       
 
 <script><![CDATA[
   (function(){
     const API = {
       tipEl: null,
-      lastTarget: null,
+      wrapEl: null,
       cache: new Map(),
 
       init(){
-        // Tooltip-Container einmalig anlegen
-        this.tipEl = document.createElement('div');
+        const doc = window.document || document;
+        const svg = doc.getElementById('svg1');
+
+        // Bevorzugt: Wrapper .svg-wrap
+        // Fallback: Elternknoten von #svg1, sonst body
+        this.wrapEl = doc.querySelector('.svg-wrap') ||
+                      (svg && svg.parentElement) ||
+                      doc.body;
+
+        // Tooltip-Element anlegen (Styling kommt aus CSS .svg-tooltip)
+        this.tipEl = doc.createElement('div');
         this.tipEl.className = 'svg-tooltip';
         this.tipEl.setAttribute('role', 'tooltip');
         this.tipEl.setAttribute('aria-hidden', 'true');
 
-        // Basis-Styles für Lesbarkeit + robuster Umbruch
-        const s = this.tipEl.style;
-        s.position = 'fixed';                 // relativ zum Viewport
-        s.zIndex = '9999';
-        s.padding = '8px 10px';
-        s.background = 'rgba(31,28,36,0.92)';
-        s.color = '#fff';
-        s.borderRadius = '6px';
-        s.boxShadow = '0 2px 10px rgba(0,0,0,0.25)';
-        s.fontFamily = 'sans-serif';
-        s.fontSize = '14px';
-        s.lineHeight = '1.35';
-        s.textAlign = 'left';
-        s.pointerEvents = 'none';
-        s.display = 'inline-block';           // damit width greift
-        // --- robuste Umbruch-Regeln ---
-        s.whiteSpace = 'normal';              // erlaubt Zeilenumbruch
-        s.overflowWrap = 'anywhere';          // bricht lange Tokens
-        s.wordBreak = 'break-all';            // bricht im Zweifel an jeder Stelle
-        s.hyphens = 'auto';                   // Browser darf Silbentrennen
-        s.opacity = '0';
-        s.transition = 'opacity 120ms ease-out';
-
-        (window.document || document).body.appendChild(this.tipEl);
-      },
-
-      // Sichtbare Abmessungen/Position des Root-SVG (#svg1)
-      getSvgViewportRect(){
-        const svg = window.document.getElementById('svg1');
-        return svg ? svg.getBoundingClientRect()
-                   : { left: 0, top: 0, right: window.innerWidth, bottom: window.innerHeight,
-                       width: window.innerWidth, height: window.innerHeight };
+        // In den Container hängen (nicht in body, falls Wrapper vorhanden)
+        this.wrapEl.appendChild(this.tipEl);
       },
 
       // Textquelle: <desc>, data-tooltip, inkscape:label/id
@@ -554,101 +531,64 @@
         return label || '';  // Fallback
       },
 
-      // Fallback: Soft-Breaks einfügen (Zero-Width Space an sinnvollen Stellen)
-      soften(text){
-        // Fügt zwischen typischen Trennzeichen Zero‑Width Spaces ein
-        // und setzt bei sehr langen Runs ohne Trennzeichen alle 30 Zeichen einen Softbreak.
-        const zws = '\u200b';
-        let t = String(text)
-          .replace(/([\/\-_.,;:])/g, '$1' + zws);     // nach Trennzeichen
-        // Harte Runs ohne Trennzeichen aufbrechen:
-        t = t.replace(/(\S{30})(?=\S)/g, '$1' + zws); // alle 30 Zeichen
-        return t;
-      },
-
       show(evt, explicitText){
         const target = evt.currentTarget || evt.target;
-        this.lastTarget = target;
+        const txt = explicitText != null ? explicitText : this.getText(target);
 
-        const rawTxt = explicitText != null ? explicitText : this.getText(target);
-        const txt = this.soften(rawTxt); // Soft-Breaks ergänzen
         const tipNode = this.tipEl;
-        const s = tipNode.style;
-
-        // Inhalt setzen
-        tipNode.innerText = txt; // innerText respektiert CSS-Umbruch gut
-        s.opacity = '1';
+        tipNode.textContent = txt;
+        tipNode.style.opacity = '1';
         tipNode.setAttribute('aria-hidden','false');
 
-        // Maße begrenzen relativ zur SVG-Fläche
-        const svgRect = this.getSvgViewportRect();
-        const margin = 16;
-
-        // --- WICHTIG: feste Breite setzen, nicht nur max-width ---
-        const clampWidth = Math.max(120, Math.floor(svgRect.width - margin));
-        const clampHeight = Math.max(80, Math.floor(svgRect.height - margin));
-        s.width = clampWidth + 'px';
-        s.maxWidth = clampWidth + 'px';
-        s.maxHeight = clampHeight + 'px';
-        s.overflowY = 'auto';
-
-        // Position nahe am Ziel setzen (und innerhalb der SVG clampen)
+        // Breite/Höhe werden über CSS begrenzt (max-width/max-height)
         this.positionNearTarget(target);
       },
 
-      track(evt){
-        // Optional: an die Maus koppeln
-        // const s = this.tipEl.style;
-        // s.left = (evt.clientX + 8) + 'px';
-        // s.top  = (evt.clientY + 8) + 'px';
-      },
-
       hide(){
-        const s = this.tipEl.style;
-        s.opacity = '0';
-        this.tipEl.setAttribute('aria-hidden','true');
-        this.lastTarget = null;
+        const tipNode = this.tipEl;
+        tipNode.style.opacity = '0';
+        tipNode.setAttribute('aria-hidden','true');
       },
 
       positionNearTarget(target){
-        const rect = target.getBoundingClientRect();
         const tipNode = this.tipEl;
-        const s = tipNode.style;
 
-        s.opacity = '1';
+        // Geometrie relativ zum Wrapper berechnen
+        const targetRect = target.getBoundingClientRect();
+        const wrapRect   = this.wrapEl.getBoundingClientRect();
 
         const offset = 8;
-        let x = rect.right + offset;
-        let y = rect.top + offset;
+        // Standard: rechts‑oben neben dem Objekt (RELATIV zum Wrapper)
+        let x = (targetRect.right - wrapRect.left) + offset;
+        let y = (targetRect.top   - wrapRect.top ) + offset;
 
+        // Tooltipgröße messen
         const tipW = tipNode.offsetWidth;
         const tipH = tipNode.offsetHeight;
 
-        const vw = window.innerWidth;
-        const vh = window.innerHeight;
-        const svgRect = this.getSvgViewportRect();
-        const clampLeft   = Math.max(0, svgRect.left);
-        const clampTop    = Math.max(0, svgRect.top);
-        const clampRight  = Math.min(vw, svgRect.right);
-        const clampBottom = Math.min(vh, svgRect.bottom);
+        // Grenzen innerhalb des Wrappers
+        const clampLeft   = 0;
+        const clampTop    = 0;
+        const clampRight  = this.wrapEl.clientWidth;
+        const clampBottom = this.wrapEl.clientHeight;
 
         // Rechts-Kante prüfen → ggf. links neben das Objekt
         if (x + tipW + offset > clampRight) {
-          x = rect.left - tipW - offset;
+          x = (targetRect.left - wrapRect.left) - tipW - offset;
         }
         // Untere Kante prüfen → ggf. oberhalb positionieren
         if (y + tipH + offset > clampBottom) {
-          y = rect.bottom - tipH - offset;
+          y = (targetRect.bottom - wrapRect.top) - tipH - offset;
         }
 
-        // Innerhalb der SVG-Grenzen clampen
+        // Final clampen innerhalb des Wrappers
         if (x < clampLeft) x = clampLeft + offset;
         if (y < clampTop)  y = clampTop  + offset;
-        if (x + tipW > clampRight) x = clampRight - tipW - offset;
+        if (x + tipW > clampRight)  x = clampRight  - tipW - offset;
         if (y + tipH > clampBottom) y = clampBottom - tipH - offset;
 
-        s.left = Math.max(0, x) + 'px';
-        s.top  = Math.max(0, y) + 'px';
+        tipNode.style.left = Math.round(x) + 'px';
+        tipNode.style.top  = Math.round(y) + 'px';
       },
 
       // JSON abrufen mit Cache
@@ -685,8 +625,12 @@
     // global verfügbar machen
     window.SVGTooltip = API;
   })();
-]]></script>
+]]>
+
+</script>
 
 
-       
+    
+
        </svg>
+</div>
