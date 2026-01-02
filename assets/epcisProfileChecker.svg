@@ -45,96 +45,129 @@
      id="page2"
      margin="0"
      bleed="0" /></sodipodi:namedview><defs
-   id="defs1"><rect
+     id="defs1">
+   
+     <rect
      x="618.42151"
      y="1959.2469"
      width="946.78693"
      height="164.18269"
-     id="rect16" /><rect
+     id="rect16" />
+     
+     <rect
      x="262.69232"
      y="1067.1876"
      width="4192.1318"
      height="262.69232"
-     id="rect13" /><rect
+     id="rect13" />
+     
+     <rect
      x="514.43915"
      y="459.71158"
      width="1598.045"
      height="355.72919"
-     id="rect10" /><rect
+     id="rect10" />
+     
+     <rect
      x="426.87503"
      y="136.81892"
      width="1680.1364"
      height="279.1106"
-     id="rect9" /><rect
+     id="rect9" />
+     
+     <rect
      x="120.40065"
      y="-295.52887"
      width="2823.9424"
      height="224.38303"
-     id="rect2" /><rect
+     id="rect2" />
+     
+     <rect
      x="514.43915"
      y="459.71158"
      width="1160.2245"
      height="251.74681"
-     id="rect10-0" /><rect
+     id="rect10-0" />
+     
+     <rect
      x="426.87503"
      y="136.81892"
      width="1680.1364"
      height="279.1106"
-     id="rect9-5" /><rect
+     id="rect9-5" />
+     
+     <rect
      x="514.43915"
      y="459.71158"
      width="1598.045"
      height="355.72919"
-     id="rect10-2" /><rect
+     id="rect10-2" />
+     
+     <rect
      x="618.42151"
      y="1959.2469"
      width="946.78693"
      height="164.18269"
-     id="rect16-9" /><rect
+     id="rect16-9" />
+     
+     <rect
      x="618.42151"
      y="1959.2469"
      width="946.78693"
      height="164.18269"
-     id="rect16-5" /><rect
+     id="rect16-5" />
+     
+     <rect
      x="618.42151"
      y="1959.2469"
      width="946.78693"
      height="164.18269"
-     id="rect16-8" /><rect
+     id="rect16-8" />
+     
+     <rect
      x="618.42151"
      y="1959.2469"
      width="946.78693"
      height="164.18269"
-     id="rect16-9-4" /><rect
+     id="rect16-9-4" />
+     
+     <rect
      x="618.42151"
      y="1959.2469"
      width="946.78693"
      height="164.18269"
-     id="rect16-9-4-8" /></defs><g
+     id="rect16-9-4-8" />
+    
+    </defs><g
    inkscape:label="Ebene 1"
    inkscape:groupmode="layer"
-   id="layer1"><rect
+   id="layer1">
+   
+   <rect
      style="fill:#aaaaff;stroke-width:0.264583"
      id="rect1"
      width="1197.9521"
      height="801.70648"
      x="1.0238907"
-     y="-1.0238907" /><text
+     y="-1.0238907" />
+     
+     <text
      xml:space="preserve"
      transform="matrix(0,-0.26458333,0.26458333,0,81.088645,800.52043)"
      id="text1"
-     style="font-size:133.333px;text-align:start;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect2);shape-padding:32.8365;display:inline;fill:#0b1728"><tspan
+     style="font-size:133.333px;text-align:center;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect2);shape-padding:32.8365;display:inline;fill:#0b1728"><tspan
        x="153.23633"
        y="-141.04963"
        id="tspan4"><tspan
-         dx="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.00010299683 0 0 0 0 0 0 0 0 0 0 0 0 0 0.00011444092 0 0 0 0 0 0.00012207031"
-         id="tspan3">Free | Open-Source | Community-Driven</tspan></tspan></text><rect
+         id="tspan3">Free  |  Open-Source  |  Community-Driven</tspan></tspan></text><rect
      style="fill:#0b1728;stroke-width:0.267496"
      id="rect6-0"
      width="1116.4082"
      height="401.09604"
      x="65.839203"
-     y="380.76505" /><rect
+     y="380.76505" />
+     
+     <rect
      style="fill:#0b1728;stroke-width:0.214431"
      id="rect6-0-4"
      width="1116.4082"
@@ -142,9 +175,8 @@
      x="65.839203"
      y="18.692093" />
 
-
-<a href="https://example.com/seite-b"
-     xlink:href="https://example.com/seite-b"
+    <a href="https://ralphtro.github.io/TEMP_EPC-SVG/validator.html"
+     xlink:href="https://ralphtro.github.io/TEMP_EPC-SVG/validator.html"
      target="_blank"
      rel="noopener noreferrer">
     <rect
@@ -160,27 +192,43 @@
       aria-label="Open EPCIS Event Validator"
       data-tooltip="Validate an EPCIS event against a predefined EPCIS event profile"
       onmouseover="(function(evt){const el=evt.currentTarget||evt.target;el.style.fill='#6e98ec';window.SVGTooltip&amp;&amp;window.SVGTooltip.show&amp;&amp;window.SVGTooltip.show(evt)})(evt)"
-      onmouseout="(function(evt){const el=evt.currentTarget||evt.target;el.style.fill='#c8b7c4';window.SVGTooltip&amp;&amp;window.SVGTooltip.hide&amp;&amp;window.SVGTooltip.hide(evt)})(evt)"/>
-  </a>
+      onmouseout="(function(evt){const el=evt.currentTarget||evt.target;el.style.fill='#c8b7c4';window.SVGTooltip&amp;&amp;window.SVGTooltip.hide&amp;&amp;window.SVGTooltip.hide(evt)})(evt)"
+      />
+    </a>
 
-    
+    <a href="https://ralphtro.github.io/TEMP_EPC-SVG/builder.html"
+     xlink:href="https://ralphtro.github.io/TEMP_EPC-SVG/builder.html"
+     target="_blank"
+     rel="noopener noreferrer">
      <rect
      style="fill:#c8b7c4;stroke-width:0.446602"
-     id="rect8-7"
-     width="1025.1842"
-     height="286.70404"
-     x="111.24586"
-     y="460.46365"
-     rx="21.008905"
-     ry="13.561645" /><rect
-     style="fill:#c8b7c4;stroke-width:0.207734"
      id="rect8-1"
      width="487.97607"
      height="130.32001"
      x="648.45398"
      y="110.35117"
      rx="10"
-     ry="6.1643834" /><text
+     ry="6.1643834"
+     tabindex="0"
+     aria-label="Open EPCIS Event Profile Builder"
+     data-tooltip="Build an EPCIS event profile"
+     onmouseover="(function(evt){const el=evt.currentTarget||evt.target;el.style.fill='#6e98ec';window.SVGTooltip&amp;&amp;window.SVGTooltip.show&amp;&amp;window.SVGTooltip.show(evt)})(evt)"
+     onmouseout="(function(evt){const el=evt.currentTarget||evt.target;el.style.fill='#c8b7c4';window.SVGTooltip&amp;&amp;window.SVGTooltip.hide&amp;&amp;window.SVGTooltip.hide(evt)})(evt)"
+     />
+    </a>  
+
+     <rect
+     style="fill:#c8b7c4;stroke-width:0.207734"
+     id="rect8-7"
+     width="1025.1842"
+     height="286.70404"
+     x="111.24586"
+     y="460.46365"
+     rx="21.008905"
+     ry="13.561645" 
+     />
+
+    <text
      xml:space="preserve"
      transform="matrix(0.26458333,0,0,0.26458333,0,5.8208336)"
      id="text8"
@@ -189,7 +237,9 @@
        y="258.46209"
        id="tspan6"><tspan
          style="font-weight:bold;-inkscape-font-specification:'sans-serif Bold'"
-         id="tspan5">Interactive Web Apps</tspan></tspan></text><text
+         id="tspan5">Interactive Web Apps</tspan></tspan></text>
+         
+    <text
      xml:space="preserve"
      transform="matrix(0.26458333,0,0,0.26458333,0,367.17724)"
      id="text8-8"
@@ -200,7 +250,7 @@
          style="font-weight:bold;-inkscape-font-specification:'sans-serif Bold'"
          id="tspan7">Developer Stuff</tspan></tspan></text>
          
-         <text
+    <text
      xml:space="preserve"
      transform="matrix(0.26458333,0,0,0.26458333,84.792182,29.705828)"
      id="text9"
@@ -210,7 +260,7 @@
        y="581.35467"
        id="tspan9">Event Validator</tspan></text>
        
-       <text
+    <text
      xml:space="preserve"
      transform="matrix(0.26458333,0,0,0.26458333,388.22025,375.11899)"
      id="text9-41"
@@ -219,7 +269,7 @@
        y="581.35467"
        id="tspan10">Snippet Catalogue</tspan></text>
        
-       <text
+    <text
      xml:space="preserve"
      transform="matrix(0.26458333,0,0,0.26458333,641.08093,29.878082)"
      id="text9-4"
@@ -229,13 +279,17 @@
        y="581.35467"
        id="tspan11">Profile Builder</tspan></text>
        
-       <path
+    <path
      d="m 173.87375,126.71001 c 4.03641,0 7.56188,2.35512 9.43532,5.84217 h 1.46468 c 6.01203,0 10.90001,5.23969 10.90001,11.68433 v 64.26383 c 0,6.44464 -4.88798,11.68433 -10.90001,11.68433 h -43.6 c -6.01202,0 -10.89999,-5.23969 -10.89999,-11.68433 v -64.26383 c 0,-6.44464 4.88797,-11.68433 10.89999,-11.68433 h 1.4647 c 1.87343,-3.48705 5.3989,-5.84217 9.43531,-5.84217 z m 4.58141,38.81389 c -1.82234,-1.42402 -4.37703,-0.98587 -5.70547,0.96761 l -14.57874,21.48822 -4.51329,-5.00235 c -1.56687,-1.7344 -4.15562,-1.78917 -5.77359,-0.10954 -1.61797,1.67962 -1.66906,4.45464 -0.10219,6.18904 l 7.9025,8.76325 c 0.83453,0.9311 2.00969,1.42402 3.21891,1.33275 1.20922,-0.0913 2.31625,-0.74853 3.03156,-1.78917 l 17.42297,-25.72379 c 1.32843,-1.95347 0.91968,-4.69198 -0.90266,-6.11602 z m -25.01891,-27.12955 c -2.26515,0 -4.0875,1.95347 -4.0875,4.38162 0,2.42815 1.82235,4.38163 4.0875,4.38163 h 19.07501 c 2.26515,0 4.0875,-1.95348 4.0875,-4.38163 0,-2.42815 -1.82235,-4.38162 -4.0875,-4.38162 z"
      id="path1"
-     style="stroke-width:0.176333" /><path
+     style="stroke-width:0.176333" />
+     
+    <path
      d="m 672.6817,128.73969 c 0.9323,-0.91769 2.38253,-1.05364 3.48748,-0.33988 l 20.52773,13.45949 c 1.53656,1.00267 2.45159,2.70209 2.45159,4.52048 v 8.42918 l 15.67635,15.43083 c 5.74915,-2.54915 12.75862,-1.5125 17.47188,3.14394 l 21.7708,21.42982 c 3.2285,3.17794 3.2285,8.34421 0,11.53913 l -10.37609,10.21358 c -3.2285,3.17794 -8.47697,3.17794 -11.72274,0 l -21.77079,-21.42982 c -4.73053,-4.65643 -5.78368,-11.53913 -3.19397,-17.19823 l -15.67636,-15.43083 h -8.56329 c -1.84732,0 -3.5738,-0.9007 -4.59241,-2.41319 l -13.67365,-20.20623 c -0.72512,-1.07064 -0.587,-2.51515 0.3453,-3.43285 z m 25.03383,51.57772 c -1.08768,6.2709 0.39709,12.89868 4.52335,18.2179 l -16.38421,16.14459 c -4.85138,4.7754 -12.72408,4.7754 -17.57546,0 -4.85139,-4.77541 -4.85139,-12.52481 0,-17.30021 l 23.3764,-23.02728 6.07718,5.965 z m 29.0565,-50.4391 c 3.4702,0 6.80229,0.62879 9.85814,1.78441 1.72648,0.64578 2.03724,2.80406 0.74239,4.09562 l -9.78909,9.63578 c -0.51794,0.50982 -0.81144,1.20659 -0.81144,1.92035 v 7.03564 c 0,1.4955 1.24305,2.71909 2.76235,2.71909 h 7.14759 c 0.72512,0 1.43297,-0.2889 1.95091,-0.79873 l 9.78909,-9.63577 c 1.31212,-1.27458 3.50474,-0.96868 4.16079,0.73076 1.174,3.00799 1.8128,6.28789 1.8128,9.70374 0,7.34154 -2.96953,13.98631 -7.76912,18.88067 l -8.47697,-8.3442 c -5.71462,-5.60812 -13.5528,-7.7664 -20.90756,-6.52581 l -9.80635,-9.65277 v -5.04731 l -0.0345,-0.84971 c -0.13812,-2.1073 -0.75965,-4.12962 -1.81279,-5.93101 5.07582,-5.94801 12.67229,-9.72075 21.18379,-9.73774 z"
      id="path1-0"
-     style="stroke-width:0.171289" /><text
+     style="stroke-width:0.171289" />
+     
+     <text
      xml:space="preserve"
      transform="matrix(0.26755609,0,0,0.26458333,180.96962,14.148003)"
      id="text12"
@@ -243,37 +297,58 @@
        x="262.69141"
        y="1272.8304"
        id="tspan13"><tspan
-         dx="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -0.00016784668 0.00019836426"
          style="font-family:Sans;-inkscape-font-specification:'Sans, Bold'"
-         id="tspan12">EPCIS Profile Checker</tspan></tspan></text><path
+         id="tspan12">EPCIS Profile Checker</tspan></tspan></text>
+         
+    <path
      d="m 469.46456,472.15258 c -2.87407,-0.86695 -5.86651,0.88465 -6.69492,3.89246 l -21.64017,79.26464 c -0.82842,3.0078 0.84532,6.13946 3.7194,7.00642 2.87409,0.86696 5.86652,-0.88465 6.69493,-3.89246 l 21.64017,-79.26463 c 0.82841,-3.0078 -0.84532,-6.13947 -3.71941,-7.00643 z m 10.92153,24.08017 c -2.1133,2.21163 -2.1133,5.8033 0,8.01493 l 12.40928,12.98667 -12.40928,12.98665 c -2.1133,2.21163 -2.1133,5.80331 0,8.01494 2.1133,2.21161 5.54529,2.21161 7.65859,0 l 16.23012,-16.98529 c 2.11331,-2.21162 2.11331,-5.80331 0,-8.01492 l -16.23012,-16.98529 c -2.1133,-2.21162 -5.54529,-2.21162 -7.65859,0 z m -46.44183,0 c -2.1133,-2.21163 -5.5453,-2.21163 -7.6586,0 l -16.23012,16.98527 c -2.1133,2.21164 -2.1133,5.80332 0,8.01494 l 16.23012,16.98528 c 2.1133,2.21162 5.5453,2.21162 7.6586,0 2.11329,-2.21162 2.11329,-5.80331 0,-8.01493 l -12.40929,-12.96896 12.39238,-12.98667 c 2.1133,-2.21163 2.1133,-5.8033 0,-8.01493 z"
      id="path1-3"
      style="stroke-width:0.172952" />
      
- 
-    <rect
-      style="fill:#1f1c24;stroke-width:0.264583"
-      id="rect15"
-      width="253.39999"
-      height="56.472008"
-      x="160.72801"
-      y="578.5144"
-      rx="10"
-      ry="10"
-      data-tooltip-src="https://raw.githubusercontent.com/openepcis/openepcis-event-sentry/main/json-schema-epcis-snippets/event-type-0.1.0.json"
-      data-tooltip-json-key="description"
-    />
+    <a
+      href="https://github.com/openepcis/openepcis-event-sentry/blob/main/json-schema-epcis-snippets/event-type-0.1.0.json"
+      xlink:href="https://github.com/openepcis/openepcis-event-sentry/blob/main/json-schema-epcis-snippets/event-type-0.1.0.json"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Open JSON Schema EPCIS Snippet on GitHub (human-readable)">
+      <rect
+        style="fill:#1f1c24;stroke-width:0.264583"
+        id="rect15"
+        width="253.39999"
+        height="56.472008"
+        x="160.72801"
+        y="578.5144"
+        rx="10"
+        ry="10"
+        data-tooltip-src="https://raw.githubusercontent.com/openepcis/openepcis-event-sentry/main/json-schema-epcis-snippets/event-type-0.1.0.json"
+        data-tooltip-json-key="description"
+        onmouseover="window.SVGTooltip &amp;&amp; window.SVGTooltip.fetchAndShowJSON(event, this.getAttribute('data-tooltip-src'), this.getAttribute('data-tooltip-json-key') || 'description')"
+        onmouseout="window.SVGTooltip &amp;&amp; window.SVGTooltip.hide()"
+      />
+    </a>
 
-     
-     <rect
-     style="fill:#1f1c24;stroke-width:0.264583"
-     id="rect15-0"
-     width="253.40004"
-     height="56.472008"
-     x="160.72801"
-     y="662.51196"
-     rx="10"
-     ry="10" />
+    <a
+      href="https://github.com/openepcis/openepcis-event-sentry/blob/main/json-schema-epcis-snippets/quantity-uom-all-0.1.0.json"
+      xlink:href="https://github.com/openepcis/openepcis-event-sentry/blob/main/json-schema-epcis-snippets/quantity-uom-all-0.1.0.json"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Open JSON Schema EPCIS Snippet on GitHub (human-readable)">
+      <rect
+        style="fill:#1f1c24;stroke-width:0.264583"
+        id="rect15-0"
+        width="253.40004"
+        height="56.472008"
+        x="160.72801"
+        y="662.51196"
+        rx="10"
+        ry="10"
+        data-tooltip-src="https://raw.githubusercontent.com/openepcis/openepcis-event-sentry/main/json-schema-epcis-snippets/quantity-uom-all-0.1.0.json"
+        data-tooltip-json-key="description"
+        onmouseover="window.SVGTooltip &amp;&amp; window.SVGTooltip.fetchAndShowJSON(event, this.getAttribute('data-tooltip-src'), this.getAttribute('data-tooltip-json-key') || 'description')"
+        onmouseout="window.SVGTooltip &amp;&amp; window.SVGTooltip.hide()"
+      />
+    </a>
+
      
      <text
      xml:space="preserve"
@@ -285,24 +360,52 @@
        y="2017.6352"
        id="tspan14">Unit Codes</tspan>
       </text>
-       
-       <rect
-     style="fill:#1f1c24;stroke-width:0.264583"
-     id="rect15-2"
-     width="253.40004"
-     height="56.472008"
-     x="484.78961"
-     y="662.51196"
-     rx="10"
-     ry="10" /><rect
-     style="fill:#1f1c24;stroke-width:0.264583"
-     id="rect15-5"
-     width="253.40004"
-     height="56.472008"
-     x="808.8512"
-     y="578.5144"
-     rx="10"
-     ry="10" /><rect
+
+    <a
+      href="https://github.com/openepcis/openepcis-event-sentry/blob/main/json-schema-epcis-snippets/gs1dl-uri-sgtin-0.1.0.json"
+      xlink:href="https://github.com/openepcis/openepcis-event-sentry/blob/main/json-schema-epcis-snippets/gs1dl-uri-sgtin-0.1.0.json"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Open JSON Schema EPCIS Snippet on GitHub (human-readable)">
+      <rect
+        style="fill:#1f1c24;stroke-width:0.264583"
+        id="rect15-2"
+        width="253.40004"
+        height="56.472008"
+        x="484.78961"
+        y="662.51196"
+        rx="10"
+        ry="10"
+        data-tooltip-src="https://raw.githubusercontent.com/openepcis/openepcis-event-sentry/main/json-schema-epcis-snippets/gs1dl-uri-sgtin-0.1.0.json"
+        data-tooltip-json-key="description"
+        onmouseover="window.SVGTooltip &amp;&amp; window.SVGTooltip.fetchAndShowJSON(event, this.getAttribute('data-tooltip-src'), this.getAttribute('data-tooltip-json-key') || 'description')"
+        onmouseout="window.SVGTooltip &amp;&amp; window.SVGTooltip.hide()"
+      />
+    </a>
+
+    <a
+      href="https://github.com/openepcis/openepcis-event-sentry/blob/main/json-schema-epcis-snippets/country-code-alpha2-0.1.0.json"
+      xlink:href="https://github.com/openepcis/openepcis-event-sentry/blob/main/json-schema-epcis-snippets/country-code-alpha2-0.1.0.json"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Open JSON Schema EPCIS Snippet on GitHub (human-readable)">
+      <rect
+        style="fill:#1f1c24;stroke-width:0.264583"
+        id="rect15-5"
+        width="253.40004"
+        height="56.472008"
+        x="808.8512"
+        y="578.5144"
+        rx="10"
+        ry="10"
+        data-tooltip-src="https://raw.githubusercontent.com/openepcis/openepcis-event-sentry/main/json-schema-epcis-snippets/country-code-alpha2-0.1.0.json"
+        data-tooltip-json-key="description"
+        onmouseover="window.SVGTooltip &amp;&amp; window.SVGTooltip.fetchAndShowJSON(event, this.getAttribute('data-tooltip-src'), this.getAttribute('data-tooltip-json-key') || 'description')"
+        onmouseout="window.SVGTooltip &amp;&amp; window.SVGTooltip.hide()"
+      />
+    </a>
+     
+     <rect
      style="fill:#1f1c24;stroke-width:0.264583"
      id="rect15-1"
      width="253.40004"
@@ -310,16 +413,30 @@
      x="808.8512"
      y="662.51196"
      rx="10"
-     ry="10" /><rect
-     style="fill:#1f1c24;stroke-width:0.264583"
-     id="rect15-3"
-     width="253.40004"
-     height="56.472008"
-     x="484.78961"
-     y="578.5144"
-     rx="10"
      ry="10" />
-     
+
+    <a
+      href="https://github.com/openepcis/openepcis-event-sentry/blob/main/json-schema-epcis-snippets/biz-step-0.1.0.json"
+      xlink:href="https://github.com/openepcis/openepcis-event-sentry/blob/main/json-schema-epcis-snippets/biz-step-0.1.0.json"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Open JSON Schema EPCIS Snippet on GitHub (human-readable)">
+      <rect
+        style="fill:#1f1c24;stroke-width:0.264583"
+        id="rect15-3"
+        width="253.40004"
+        height="56.472008"
+        x="484.78961"
+        y="578.5144"
+        rx="10"
+        ry="10"
+        data-tooltip-src="https://raw.githubusercontent.com/openepcis/openepcis-event-sentry/main/json-schema-epcis-snippets/biz-step-0.1.0.json"
+        data-tooltip-json-key="description"
+        onmouseover="window.SVGTooltip &amp;&amp; window.SVGTooltip.fetchAndShowJSON(event, this.getAttribute('data-tooltip-src'), this.getAttribute('data-tooltip-json-key') || 'description')"
+        onmouseout="window.SVGTooltip &amp;&amp; window.SVGTooltip.hide()"
+      />
+    </a>
+
      <text
      xml:space="preserve"
      transform="matrix(0.26458333,0,0,0.26458333,10.136001,78.192011)"
@@ -330,9 +447,9 @@
        y="2017.6352"
        id="tspan15">Event Types</tspan>
       
-      </text>
+    </text>
       
-      <text
+    <text
      xml:space="preserve"
      transform="matrix(0.26458333,0,0,0.26458333,335.3366,162.53373)"
      id="text16-8"
@@ -341,9 +458,9 @@
        x="618.42188"
        y="2017.6352"
        id="tspan16">SGTIN Digital Link URIs </tspan>
-      </text>
+    </text>
       
-      <text
+    <text
      xml:space="preserve"
      transform="matrix(0.26458333,0,0,0.26458333,335.3366,78.192011)"
      id="text16-4"
@@ -353,7 +470,7 @@
        y="2017.6352"
        id="tspan17">Business Steps</tspan></text>
        
-       <text
+    <text
      xml:space="preserve"
      transform="matrix(0.26458333,0,0,0.26458333,659.82768,78.192011)"
      id="text16-5-4"
@@ -363,7 +480,7 @@
        y="2017.6352"
        id="tspan18">Country Codes</tspan></text>
        
-       <text
+    <text
      xml:space="preserve"
      transform="matrix(0.26458333,0,0,0.26458333,660.75965,162.62468)"
      id="text16-5-4-7"
@@ -375,11 +492,14 @@
 
 
   <!-- ===== Tooltip-Logik ===== -->
+
+
 <script><![CDATA[
   (function(){
     const API = {
       tipEl: null,
       lastTarget: null,
+      cache: new Map(),
 
       init(){
         // Tooltip-Container einmalig anlegen
@@ -387,11 +507,42 @@
         this.tipEl.className = 'svg-tooltip';
         this.tipEl.setAttribute('role', 'tooltip');
         this.tipEl.setAttribute('aria-hidden', 'true');
-        // Im Root-Dokument (Window des SVG) anfügen
+
+        // Basis-Styles für Lesbarkeit + robuster Umbruch
+        const s = this.tipEl.style;
+        s.position = 'fixed';                 // relativ zum Viewport
+        s.zIndex = '9999';
+        s.padding = '8px 10px';
+        s.background = 'rgba(31,28,36,0.92)';
+        s.color = '#fff';
+        s.borderRadius = '6px';
+        s.boxShadow = '0 2px 10px rgba(0,0,0,0.25)';
+        s.fontFamily = 'sans-serif';
+        s.fontSize = '14px';
+        s.lineHeight = '1.35';
+        s.textAlign = 'left';
+        s.pointerEvents = 'none';
+        s.display = 'inline-block';           // damit width greift
+        // --- robuste Umbruch-Regeln ---
+        s.whiteSpace = 'normal';              // erlaubt Zeilenumbruch
+        s.overflowWrap = 'anywhere';          // bricht lange Tokens
+        s.wordBreak = 'break-all';            // bricht im Zweifel an jeder Stelle
+        s.hyphens = 'auto';                   // Browser darf Silbentrennen
+        s.opacity = '0';
+        s.transition = 'opacity 120ms ease-out';
+
         (window.document || document).body.appendChild(this.tipEl);
       },
 
-      // Textquelle: <desc> am Element, ansonsten data-tooltip, ansonsten id
+      // Sichtbare Abmessungen/Position des Root-SVG (#svg1)
+      getSvgViewportRect(){
+        const svg = window.document.getElementById('svg1');
+        return svg ? svg.getBoundingClientRect()
+                   : { left: 0, top: 0, right: window.innerWidth, bottom: window.innerHeight,
+                       width: window.innerWidth, height: window.innerHeight };
+      },
+
+      // Textquelle: <desc>, data-tooltip, inkscape:label/id
       getText(target){
         const desc = target.querySelector && target.querySelector('desc');
         if (desc && desc.textContent && desc.textContent.trim().length) {
@@ -403,96 +554,132 @@
         return label || '';  // Fallback
       },
 
+      // Fallback: Soft-Breaks einfügen (Zero-Width Space an sinnvollen Stellen)
+      soften(text){
+        // Fügt zwischen typischen Trennzeichen Zero‑Width Spaces ein
+        // und setzt bei sehr langen Runs ohne Trennzeichen alle 30 Zeichen einen Softbreak.
+        const zws = '\u200b';
+        let t = String(text)
+          .replace(/([\/\-_.,;:])/g, '$1' + zws);     // nach Trennzeichen
+        // Harte Runs ohne Trennzeichen aufbrechen:
+        t = t.replace(/(\S{30})(?=\S)/g, '$1' + zws); // alle 30 Zeichen
+        return t;
+      },
+
       show(evt, explicitText){
         const target = evt.currentTarget || evt.target;
         this.lastTarget = target;
 
-        const txt = explicitText != null ? explicitText : this.getText(target);
-        this.tipEl.textContent = txt;
-        this.tipEl.style.opacity = '1';
-        this.tipEl.setAttribute('aria-hidden','false');
+        const rawTxt = explicitText != null ? explicitText : this.getText(target);
+        const txt = this.soften(rawTxt); // Soft-Breaks ergänzen
+        const tipNode = this.tipEl;
+        const s = tipNode.style;
 
-        // Position initial nahe am Objekt setzen
+        // Inhalt setzen
+        tipNode.innerText = txt; // innerText respektiert CSS-Umbruch gut
+        s.opacity = '1';
+        tipNode.setAttribute('aria-hidden','false');
+
+        // Maße begrenzen relativ zur SVG-Fläche
+        const svgRect = this.getSvgViewportRect();
+        const margin = 16;
+
+        // --- WICHTIG: feste Breite setzen, nicht nur max-width ---
+        const clampWidth = Math.max(120, Math.floor(svgRect.width - margin));
+        const clampHeight = Math.max(80, Math.floor(svgRect.height - margin));
+        s.width = clampWidth + 'px';
+        s.maxWidth = clampWidth + 'px';
+        s.maxHeight = clampHeight + 'px';
+        s.overflowY = 'auto';
+
+        // Position nahe am Ziel setzen (und innerhalb der SVG clampen)
         this.positionNearTarget(target);
       },
 
       track(evt){
-        // Optional: an die Maus koppeln (wenn gewünscht)
-        // Hier NICHT notwendig, da wir bewusst „nahe am Objekt“ positionieren.
-        // Wenn du Maus-Tracking willst, dann:
-        // this.tipEl.style.left = evt.clientX + 'px';
-        // this.tipEl.style.top  = evt.clientY + 'px';
+        // Optional: an die Maus koppeln
+        // const s = this.tipEl.style;
+        // s.left = (evt.clientX + 8) + 'px';
+        // s.top  = (evt.clientY + 8) + 'px';
       },
 
       hide(){
-        this.tipEl.style.opacity = '0';
+        const s = this.tipEl.style;
+        s.opacity = '0';
         this.tipEl.setAttribute('aria-hidden','true');
         this.lastTarget = null;
       },
 
       positionNearTarget(target){
-        // Bounding Box relativ zum Viewport
         const rect = target.getBoundingClientRect();
-        const tip = this.tipEl;
+        const tipNode = this.tipEl;
+        const s = tipNode.style;
 
-        // Erst sichtbar machen, damit Breite/Höhe messbar sind
-        tip.style.opacity = '1';
-        // Standardposition: rechts‑oben neben dem Objekt
+        s.opacity = '1';
+
         const offset = 8;
         let x = rect.right + offset;
         let y = rect.top + offset;
 
-        // Maße des Tooltips
-        const tipW = tip.offsetWidth;
-        const tipH = tip.offsetHeight;
+        const tipW = tipNode.offsetWidth;
+        const tipH = tipNode.offsetHeight;
+
         const vw = window.innerWidth;
         const vh = window.innerHeight;
+        const svgRect = this.getSvgViewportRect();
+        const clampLeft   = Math.max(0, svgRect.left);
+        const clampTop    = Math.max(0, svgRect.top);
+        const clampRight  = Math.min(vw, svgRect.right);
+        const clampBottom = Math.min(vh, svgRect.bottom);
 
         // Rechts-Kante prüfen → ggf. links neben das Objekt
-        if (x + tipW + offset > vw) {
+        if (x + tipW + offset > clampRight) {
           x = rect.left - tipW - offset;
         }
         // Untere Kante prüfen → ggf. oberhalb positionieren
-        if (y + tipH + offset > vh) {
+        if (y + tipH + offset > clampBottom) {
           y = rect.bottom - tipH - offset;
         }
 
-        tip.style.left = Math.max(0, x) + 'px';
-        tip.style.top  = Math.max(0, y) + 'px';
-      }, 
+        // Innerhalb der SVG-Grenzen clampen
+        if (x < clampLeft) x = clampLeft + offset;
+        if (y < clampTop)  y = clampTop  + offset;
+        if (x + tipW > clampRight) x = clampRight - tipW - offset;
+        if (y + tipH > clampBottom) y = clampBottom - tipH - offset;
 
+        s.left = Math.max(0, x) + 'px';
+        s.top  = Math.max(0, y) + 'px';
+      },
 
-cache: new Map(),
+      // JSON abrufen mit Cache
+      async fetchJSON(url) {
+        if (this.cache.has(url)) return this.cache.get(url);
+        const res = await fetch(url, { mode: 'cors', credentials: 'omit' });
+        if (!res.ok) throw new Error('HTTP ' + res.status);
+        const data = await res.json();
+        this.cache.set(url, data);
+        return data;
+      },
 
-async fetchJSON(url) {
-  if (this.cache.has(url)) return this.cache.get(url);
-  const res = await fetch(url, { mode: 'cors', credentials: 'omit' });
-  if (!res.ok) throw new Error('HTTP ' + res.status);
-  const data = await res.json();
-  this.cache.set(url, data);
-  return data;
-},
+      /**
+       * Lädt JSON und zeigt die gewünschte Property als Tooltip an.
+       * @param {Event} evt - Maus-/Touch-Event
+       * @param {string} url - RAW-JSON-URL
+       * @param {string} key - Property-Name (z.B. "description")
+       */
+      async fetchAndShowJSON(evt, url, key='description') {
+        try {
+          // Sofort-Feedback
+          this.show(evt, 'Lade…');
 
-/**
- * Lädt JSON und zeigt die gewünschte Property als Tooltip an.
- * @param {Event} evt - Maus-/Touch-Event
- * @param {string} url - RAW-JSON-URL
- * @param {string} key - Property-Name (z.B. "description")
- */
-async fetchAndShowJSON(evt, url, key='description') {
-  try {
-    // Sofort Feedback
-    this.show(evt, 'Lade…');
-
-    const data = await this.fetchJSON(url);
-    // einfache Key-Auswertung: top-level property
-    const txt = (data && data[key]) ? String(data[key]) : '(Kein Text gefunden)'
-    this.show(evt, txt);
-  } catch (err) {
-    console.error('Tooltip JSON fetch error:', err);
-    this.show(evt, 'Fehler beim Laden');
-  }
-}
+          const data = await this.fetchJSON(url);
+          const txt = (data && data[key]) ? String(data[key]) : '(Kein Text gefunden)';
+          this.show(evt, txt);
+        } catch (err) {
+          console.error('Tooltip JSON fetch error:', err);
+          this.show(evt, 'Fehler beim Laden');
+        }
+      }
     };
 
     // global verfügbar machen
@@ -501,7 +688,5 @@ async fetchAndShowJSON(evt, url, key='description') {
 ]]></script>
 
 
-       
-       
        
        </svg>
